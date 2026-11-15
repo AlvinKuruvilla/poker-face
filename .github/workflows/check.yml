@@ -1,0 +1,17 @@
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shellcheck
+        run: shellcheck build-hooks.sh skills/prose-pass/check.sh
+      - name: hooks.json matches rules.md
+        run: |
+          ./build-hooks.sh
+          git diff --exit-code hooks/hooks.json

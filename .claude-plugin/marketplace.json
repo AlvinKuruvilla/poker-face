@@ -1,0 +1,12 @@
+{
+  "name": "poker-face",
+  "owner": { "name": "Alvin Kuruvilla" },
+  "description": "The poker-face plugin for Claude Code",
+  "plugins": [
+    {
+      "name": "poker-face",
+      "source": "./",
+      "description": "Blocks LLM voice in prose before Claude Code writes or sends it"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "poker-face",
+  "version": "0.1.0",
+  "description": "Blocks LLM voice in comments, docs, commit messages, PRs, issues and sent messages before Claude Code writes or sends them",
+  "author": { "name": "Alvin Kuruvilla" },
+  "repository": "https://github.com/AlvinKuruvilla/poker-face",
+  "license": "MIT",
+  "keywords": ["writing", "style", "hooks", "llm-voice"]
+}
